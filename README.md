@@ -17,10 +17,10 @@ output_characters: consist of all the hindi characters present in the dataset.
 
 ## Model
 
-### Encoder
+#### Encoder
 Encoder takes the English data as input and converts it into vectors that is passed to an LSTM model for training. We discard the encoder output and only keep the states.
 
-### Decoder
+#### Decoder
 The decoder takes in Input the states of the encoder and the Hindi data points corresponding to the English input of Encoder. It trains an LSTM to produce the translated phrase in output. The decoder used softmax layer.
 
 ## Training
